@@ -14,3 +14,5 @@ AI 활용 통합 플랫폼 실무 과정(RPA + PROJECTS)
 4. 조건문
 5. 반복문
 6. 레코딩 (현재)
+
+[uipath studio reference](https://docs.uipath.com/studio/docs)
