@@ -87,7 +87,7 @@
           <av:Size x:Key="ShapeSize">200,108</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="미국 USD 현찰 사실 때 환율 추출" DisplayName="텍스트 추출하기" sap:VirtualizedContainerService.HintSize="551,1031" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="미국 USD 현찰 사실 때 환율 추출" DisplayName="case3 텍스트 추출하기" sap:VirtualizedContainerService.HintSize="551,1031" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

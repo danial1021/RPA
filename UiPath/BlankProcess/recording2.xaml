@@ -73,7 +73,7 @@
           <av:Size x:Key="ShapeSize">200,108</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="로그인 프로세스2&#xA;" DisplayName="사이트 로그인2" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence sap2010:Annotation.AnnotationText="로그인 프로세스2&#xA;" DisplayName="case2 사이트 로그인2" sap:VirtualizedContainerService.HintSize="551,1151" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
