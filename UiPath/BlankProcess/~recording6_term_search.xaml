@@ -92,14 +92,14 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="한국전력공사 전력용어 검색 프로세스" DisplayName="전력용어 검색" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence sap2010:Annotation.AnnotationText="한국전력공사 전력용어 검색 프로세스" DisplayName="전력용어 검색" sap:VirtualizedContainerService.HintSize="551,2286" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="웹" sap:VirtualizedContainerService.HintSize="509,2008" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="웹" sap:VirtualizedContainerService.HintSize="509,2194" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:GenericValue" Name="Div" />
           </Sequence.Variables>
@@ -124,18 +124,20 @@
               <InArgument x:TypeArguments="x:String">검전기</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="http://home.kepco.co.kr/kepco/main.do 열기" sap:VirtualizedContainerService.HintSize="467,591" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="[Str_kepco]">
+          <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="http://home.kepco.co.kr/kepco/main.do 열기" sap:VirtualizedContainerService.HintSize="467,715" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="[Str_kepco]">
             <ui:OpenBrowser.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,490" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,614" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="334,22" />
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" />
                   <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /kepco/KO/A/A/KOAAHP...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_24" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition OffsetX="39" OffsetY="11" Position="TopLeft" />
@@ -176,13 +178,13 @@
               </ActivityAction>
             </ui:OpenBrowser.Body>
           </ui:OpenBrowser>
-          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser '     KEPC Page'" sap:VirtualizedContainerService.HintSize="467,1085" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="70ef28f44a79b1359fe6afafa92c7462" Selector="&lt;html app='chrome.exe' title='- 용어사전 | KEPCO -' /&gt;">
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser '     KEPC Page'" sap:VirtualizedContainerService.HintSize="467,1147" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="70ef28f44a79b1359fe6afafa92c7462" Selector="&lt;html app='chrome.exe' title='- 용어사전 | KEPCO -' /&gt;">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="401,939" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="401,1001" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -254,6 +256,7 @@
                       <OutArgument x:TypeArguments="ui:GenericValue">[Div]</OutArgument>
                     </ui:GetValue.Value>
                   </ui:GetValue>
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="359,22" />
                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="359,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Div]" />
                 </Sequence>
               </ActivityAction>
