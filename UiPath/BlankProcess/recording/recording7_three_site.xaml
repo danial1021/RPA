@@ -94,7 +94,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="한국은행 100대 지표 엑셀 다운로드" DisplayName="3개 사이트 점검" sap:VirtualizedContainerService.HintSize="551,2749" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence sap2010:Annotation.AnnotationText="3개 사이트 점검" DisplayName="3개 사이트 점검" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
