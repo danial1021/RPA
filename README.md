@@ -13,6 +13,9 @@ AI 활용 통합 플랫폼 실무 과정(RPA + PROJECTS)
 3. 변수
 4. 조건문
 5. 반복문
-6. 레코딩 (현재)
+6. 레코딩
+7. 셀렉터
+8. 데이터 가공
+9. 엑셀 (현재)
 
 [uipath studio reference](https://docs.uipath.com/studio/docs)
