@@ -70,7 +70,7 @@
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <x:Double x:Key="Width">670</x:Double>
         <x:Double x:Key="Height">808.6</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 230,107.5 230,210 200,210</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 340,107.5 340,151.5</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -109,7 +109,7 @@
         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Dic_Name(&quot;People&quot;).ToString]" />
       </Sequence>
     </FlowStep>
-    <FlowStep>
+    <FlowStep x:Name="__ReferenceID0">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">240,151.5</av:Point>
@@ -123,7 +123,7 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Assign sap:VirtualizedContainerService.HintSize="307.2,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign sap:VirtualizedContainerService.HintSize="308,60" sap2010:WorkflowViewState.IdRef="Assign_3">
           <Assign.To>
             <OutArgument x:TypeArguments="scg:List(x:String)">[List_Name]</OutArgument>
           </Assign.To>
@@ -131,14 +131,14 @@
             <InArgument x:TypeArguments="scg:List(x:String)">[New List(of String)]</InArgument>
           </Assign.Value>
         </Assign>
-        <AddToCollection x:TypeArguments="x:String" Collection="[List_Name]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="307.2,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="Kevin" />
-        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="307.2,289.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[List_Name]">
+        <AddToCollection x:TypeArguments="x:String" Collection="[List_Name]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="308,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="Kevin" />
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="308,288" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[List_Name]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="x:String">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:String" Name="item" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="272,155.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="272,154" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,7 +151,7 @@
         </ui:ForEach>
       </Sequence>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID0">
+    <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,161.5</av:Point>
