@@ -18,6 +18,7 @@ AI 활용 통합 플랫폼 실무 과정(RPA + PROJECTS)
 8. 데이터 가공
 9. 엑셀
 10. 디버깅
-11. 예외처리 (현재)
+11. 예외처리
+12. 프로젝트 구성(Invoke Workflow) - 교육 
 
 [uipath studio reference](https://docs.uipath.com/studio/docs)
